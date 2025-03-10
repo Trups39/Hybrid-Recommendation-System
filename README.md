@@ -18,7 +18,8 @@ One of the events that energized research in recommender systems was the Netflix
 The dataset I used here comes directly from Netflix. It consists of 4 text data files, each file contains over 20M rows, i.e. over 4K movies and 400K customers. Altogether over 17K movies and 500K+ customers!
 
 
-For example, we initially select a random user and focus on the movies that that user watches.
+<img width="569" alt="image" src="https://github.com/user-attachments/assets/cf35640d-1ee5-4571-8049-a87fad0e9fce" />
+
 
 
 the number of movies watched by the user we determined is 455.
@@ -29,18 +30,22 @@ Collaborative recommendation systems aggregate ratings or recommendations of obj
 Determining the most similar users to the user to be recommended We look at the relationship (similarity) between the user and the users, which we determined by correlation.
 
 Further, there are several types of collaborative filtering algorithms:
+<img width="560" alt="image" src="https://github.com/user-attachments/assets/fbba57e2-8fb8-4b9f-8b67-b08e74540a81" />
 
 
 image
 1- User-User Collaborative Filtering: It is based on searching for similar customers and offering suggestions based on similar ones. This algorithm is very effective but takes a lot of time and resources.
 
 
-Determined the users who watch at least 60 percent (subject to change) of the movies the user watches.
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/abfefcff-d417-4fd8-8f85-362f32092055" />
+
 
 
 We bring together users who watch the same movies with the user. (most similar users to the user to be recommended)
+<img width="561" alt="image" src="https://github.com/user-attachments/assets/b92073a4-d9a1-42c6-a345-eba7e632213b" />
 
 2-Item-Item Collaborative Filtering: It is a type of recommendation method that searches for similar items based on items users have previously liked or positively interacted with. It requires fewer resources and time compared to user-user collaboration filtering.
+<img width="563" alt="image" src="https://github.com/user-attachments/assets/00d4db70-8fb6-4e86-a917-d2e1701223d3" />
 
 
 We can recommend other movies watched by users who are at least 60 percent similar to the user we selected.
@@ -48,15 +53,14 @@ Content-Based Filtering System
 The filtering system is based on a single user’s interactions and preferences. It is based on metadata gathered from a user’s history and interactions. A Content-Based suggestion learns a profile of the new user’s interests based on existing properties in the objects the user has graded. The algorithms are such that they suggest similar items to users that they have liked in the past or are currently viewing.
 
 To create a user profile, the system mostly focuses on two types of information:
-
-A model of the user’s preference.
-A history of the user’s interaction with the recommender system.
+1.A model of the user’s preference.
+2.A history of the user’s interaction with the recommender system.
 The more information the user provides, the higher the accuracy.
+<img width="568" alt="image" src="https://github.com/user-attachments/assets/ff104262-8dfb-445b-8745-2cd69e8f82ba" />
 
-
-image
 Hybrid Recommender Systems
 We can make recommendations according to the last watched and high-rated movie titles of the user.
+<img width="533" alt="image" src="https://github.com/user-attachments/assets/0c3a615e-daac-4366-9d97-ced9bf656c5c" />
 
 Most recommender systems now use a hybrid approach, combining collaborative filtering, content-based filtering, and other approaches.
 
@@ -66,6 +70,7 @@ insufficiency. Some hybridization techniques include:
 
 Weighted: Combining the score of different recommendation components numerically.
 
+<img width="566" alt="image" src="https://github.com/user-attachments/assets/6661dde2-a757-406f-ab70-13c5d8a3d9c1" />
 
 Switching: Choosing among recommendation components and applying the selected one.
 
